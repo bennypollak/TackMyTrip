@@ -1,0 +1,137 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps JavaScript API v3 Example: Polyline Simple</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="initialize()">
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?sensor=false"></script>
+<input type="file" id="fileid" name="file">
+
+<span class="readBytesButtons">
+  <button>Map file</button>
+</span>
+<div id="byte_range"></div>
+<pre>
+<div id="byte_content"></div>
+</pre>
+
+<script>
+	function initialize() {
+	}
+
+	function readBlob() {
+
+		var files = document.getElementById('fileid').files;
+		if (!files.length) {
+			alert('Please select a file!');
+			return;
+		}
+
+		var filevar = files[0];
+		var start = 0;
+		var stop = filevar.size - 1;
+
+		var reader = new FileReader();
+
+		// If we use onloadend, we need to check the readyState.
+		reader.onloadend = function(evt) {
+			if (evt.target.readyState == FileReader.DONE) { // DONE == 2
+
+				var tripFile = evt.target.result;
+				var lines = tripFile.split("\n");
+
+				var myTrip = [];
+				for (var i = 0; i < lines.length; i++) {
+					var line = lines[i];
+					var parts = line.split(",");
+					var lat = parts[1];
+					var lng = parts[2];
+					if (isNaN(lat)||isNaN(lng)) {
+						continue;
+					}
+					var point = new google.maps.LatLng(parts[1], parts[2]);
+					myTrip.push(point);
+					if (i == 0) {
+						var myBounds = new google.maps.LatLngBounds(point, point);
+						//var myBounds = new google.maps.LatLngBounds(southWest,northEast);
+					}
+					else 
+					{
+						if (!myBounds.contains(point)) {
+							myBounds.extend(point);
+						}
+						/*
+						if (point.lat() > northEastPoint.lat()) 
+							northEastPoint = new google.maps.LatLng(point.lat(), northEastPoint.lng());
+						if(point.lng() > northEastPoint.lng())
+							northEastPoint = new google.maps.LatLng(northEastPoint.lat(), point.lng());
+						if (point.lat() < southWestPoint.lat()) 
+							southWestPoint = new google.maps.LatLng(point.lat(), southWestPoint.lng());
+						if (point.lng() < southWestPoint.lng()) 
+							southWestPoint = new google.maps.LatLng(southWestPoint.lat(), point.lng());
+						*/
+					}
+			    }
+				//var myLatLng = new google.maps.LatLng(40.731887,-73.994722);
+				var zz = myBounds.getCenter();
+				loadMap(myTrip, myBounds);
+				//alert("got "+lines.length+" lines");
+				//document.getElementById('byte_content').textContent = tripFile;
+				document.getElementById('byte_range').textContent = 
+					['Read bytes: ', start + 1, ' - ', stop + 1,
+					' of ', filevar.size, ' byte file'].join('');
+			}
+		};
+
+		if (filevar.webkitSlice) {
+			var blob = filevar.webkitSlice(start, stop + 1);
+		} else if (filevar.mozSlice) {
+			var blob = filevar.mozSlice(start, stop + 1);
+		}
+		reader.readAsBinaryString(blob);
+	}
+
+	function loadMap(myTrip, myBounds) {
+//var southWest = new google.maps.LatLng(-31.203405,125.244141);
+//var northEast = new google.maps.LatLng(-25.363882,131.044922);
+//var myBounds = new google.maps.LatLngBounds(southWest,northEast);
+		var myOptions = {
+			zoom: 18,
+			center: myBounds.getCenter(),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		var myPolyLine = new google.maps.Polyline({
+			path: myTrip,
+			strokeColor: "#FF0000",
+			strokeOpacity: 1.0,
+			strokeWeight: 2
+		});
+		myPolyLine.setMap(map);
+		map.fitBounds(myBounds);
+		var marker = new google.maps.Marker({
+			position: myTrip[0],
+			map: map,
+			title:"Hello World!"
+			});
+		var marker = new google.maps.Marker({
+			position: myTrip[myTrip.length-1],
+			map: map,
+			title:"Hello World!"
+			});
+
+	}
+
+	document.querySelector('.readBytesButtons').addEventListener('click', function(evt) {
+		if (evt.target.tagName.toLowerCase() == 'button') {
+			readBlob();
+		}
+	}, false);
+
+</script>
+  <div id="map_canvas"></div>
+</body>
+</html>

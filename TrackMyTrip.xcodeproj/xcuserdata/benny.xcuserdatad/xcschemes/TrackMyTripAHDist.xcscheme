@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B20A4465149E4AC700B05B8C"
+               BuildableName = "TrackMyTrip.app"
+               BlueprintName = "TrackMyTrip"
+               ReferencedContainer = "container:TrackMyTrip.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B20A448C149E4AC800B05B8C"
+               BuildableName = "TrackMyTripTests.octest"
+               BlueprintName = "TrackMyTripTests"
+               ReferencedContainer = "container:TrackMyTrip.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B20A4465149E4AC700B05B8C"
+            BuildableName = "TrackMyTrip.app"
+            BlueprintName = "TrackMyTrip"
+            ReferencedContainer = "container:TrackMyTrip.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B20A4465149E4AC700B05B8C"
+            BuildableName = "TrackMyTrip.app"
+            BlueprintName = "TrackMyTrip"
+            ReferencedContainer = "container:TrackMyTrip.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B20A4465149E4AC700B05B8C"
+            BuildableName = "TrackMyTrip.app"
+            BlueprintName = "TrackMyTrip"
+            ReferencedContainer = "container:TrackMyTrip.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Distribution"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

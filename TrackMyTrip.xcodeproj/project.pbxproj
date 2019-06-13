@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B202339414AFB5C300BC1B58 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B202339314AFB5C300BC1B58 /* Annotation.m */; };
+		B20A446B149E4AC700B05B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A446A149E4AC700B05B8C /* UIKit.framework */; };
+		B20A446D149E4AC700B05B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A446C149E4AC700B05B8C /* Foundation.framework */; };
+		B20A446F149E4AC700B05B8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A446E149E4AC700B05B8C /* CoreGraphics.framework */; };
+		B20A4475149E4AC700B05B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20A4473149E4AC700B05B8C /* InfoPlist.strings */; };
+		B20A4477149E4AC700B05B8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A4476149E4AC700B05B8C /* main.m */; };
+		B20A447B149E4AC700B05B8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A447A149E4AC700B05B8C /* AppDelegate.m */; };
+		B20A447E149E4AC800B05B8C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A447C149E4AC800B05B8C /* MainStoryboard_iPhone.storyboard */; };
+		B20A4481149E4AC800B05B8C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A447F149E4AC800B05B8C /* MainStoryboard_iPad.storyboard */; };
+		B20A4484149E4AC800B05B8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A4483149E4AC800B05B8C /* MainViewController.m */; };
+		B20A4487149E4AC800B05B8C /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A4486149E4AC800B05B8C /* FlipsideViewController.m */; };
+		B20A448F149E4AC800B05B8C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A448E149E4AC800B05B8C /* SenTestingKit.framework */; };
+		B20A4490149E4AC800B05B8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A446A149E4AC700B05B8C /* UIKit.framework */; };
+		B20A4491149E4AC800B05B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A446C149E4AC700B05B8C /* Foundation.framework */; };
+		B20A4499149E4AC800B05B8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20A4497149E4AC800B05B8C /* InfoPlist.strings */; };
+		B20A449C149E4AC800B05B8C /* TrackMyTripTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A449B149E4AC800B05B8C /* TrackMyTripTests.m */; };
+		B20A44AD149E53E600B05B8C /* LocHistoryDB.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A44AC149E53E600B05B8C /* LocHistoryDB.m */; };
+		B20A44B0149E54A200B05B8C /* trackmytrip.db in Resources */ = {isa = PBXBuildFile; fileRef = B20A44AE149E54A200B05B8C /* trackmytrip.db */; };
+		B20A44B1149E54A200B05B8C /* trackmytrip.sql in Resources */ = {isa = PBXBuildFile; fileRef = B20A44AF149E54A200B05B8C /* trackmytrip.sql */; };
+		B20A44B3149E553D00B05B8C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A44B2149E553D00B05B8C /* libsqlite3.dylib */; };
+		B20A44B5149E67EF00B05B8C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A44B4149E67EF00B05B8C /* CoreLocation.framework */; };
+		B20A44C0149E81EC00B05B8C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20A44BF149E81EC00B05B8C /* MapViewController.m */; };
+		B20A44C2149E867700B05B8C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20A44C1149E867700B05B8C /* MapKit.framework */; };
+		B2486D0915E7E883007F64D2 /* empty.story in Resources */ = {isa = PBXBuildFile; fileRef = B2486D0815E7E883007F64D2 /* empty.story */; };
+		B25B857014A66768008AFB17 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B856C14A66768008AFB17 /* circle.png */; };
+		B25B857114A66768008AFB17 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B856D14A66768008AFB17 /* circle@2x.png */; };
+		B25B857214A66768008AFB17 /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B856E14A66768008AFB17 /* square.png */; };
+		B25B857314A66768008AFB17 /* square@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B25B856F14A66768008AFB17 /* square@2x.png */; };
+		B25B857A14A66A58008AFB17 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B857914A66A58008AFB17 /* TableViewController.m */; };
+		B25B858014A682C6008AFB17 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B857F14A682C6008AFB17 /* DetailViewController.m */; };
+		B25B858D14A6AA5C008AFB17 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B858C14A6AA5C008AFB17 /* EditViewController.m */; };
+		B25B85A514A77AB3008AFB17 /* LocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B85A414A77AB3008AFB17 /* LocManager.m */; };
+		B25B85A814A7A870008AFB17 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B25B85A714A7A870008AFB17 /* MoreViewController.m */; };
+		B26F6FCC14A8E23C0050D278 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B26F6FCB14A8E23C0050D278 /* MessageUI.framework */; };
+		B28C38B614B26A2200B529CC /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = B28C38B514B26A2200B529CC /* Trip.m */; };
+		B2C4F8A514A938B100764C31 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F89F14A938B100764C31 /* Particle.png */; };
+		B2C4F8A614A938B100764C31 /* Solid_24.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8A014A938B100764C31 /* Solid_24.png */; };
+		B2C4F8A714A938B100764C31 /* Solid_30.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8A114A938B100764C31 /* Solid_30.png */; };
+		B2C4F8A814A938B100764C31 /* Solid_37.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8A214A938B100764C31 /* Solid_37.png */; };
+		B2C4F8A914A938B100764C31 /* Solid_256.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8A314A938B100764C31 /* Solid_256.png */; };
+		B2C4F8AA14A938B100764C31 /* tmtm.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8A414A938B100764C31 /* tmtm.png */; };
+		B2C4F8B614A93E8F00764C31 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8B514A93E8F00764C31 /* button.png */; };
+		B2C4F8EE14A9430D00764C31 /* blue]button-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8E914A9430D00764C31 /* blue]button-highlight.png */; };
+		B2C4F8EF14A9430D00764C31 /* bluebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8EA14A9430D00764C31 /* bluebutton.png */; };
+		B2C4F8F014A9430D00764C31 /* button-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8EB14A9430D00764C31 /* button-highlight.png */; };
+		B2C4F8F114A9430D00764C31 /* redbutton-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8EC14A9430D00764C31 /* redbutton-highlight.png */; };
+		B2C4F8F214A9430D00764C31 /* redbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C4F8ED14A9430D00764C31 /* redbutton.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20A4492149E4AC800B05B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20A445D149E4AC400B05B8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20A4465149E4AC700B05B8C;
+			remoteInfo = TrackMyTrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B202339214AFB5C300BC1B58 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		B202339314AFB5C300BC1B58 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		B20A4466149E4AC700B05B8C /* TrackMyTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackMyTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A446A149E4AC700B05B8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B20A446C149E4AC700B05B8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B20A446E149E4AC700B05B8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B20A4472149E4AC700B05B8C /* TrackMyTrip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackMyTrip-Info.plist"; sourceTree = "<group>"; };
+		B20A4474149E4AC700B05B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20A4476149E4AC700B05B8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B20A4478149E4AC700B05B8C /* TrackMyTrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TrackMyTrip-Prefix.pch"; sourceTree = "<group>"; };
+		B20A4479149E4AC700B05B8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B20A447A149E4AC700B05B8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B20A447D149E4AC800B05B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B20A4480149E4AC800B05B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B20A4482149E4AC800B05B8C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B20A4483149E4AC800B05B8C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B20A4485149E4AC800B05B8C /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		B20A4486149E4AC800B05B8C /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		B20A448D149E4AC800B05B8C /* TrackMyTripTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackMyTripTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A448E149E4AC800B05B8C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B20A4496149E4AC800B05B8C /* TrackMyTripTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackMyTripTests-Info.plist"; sourceTree = "<group>"; };
+		B20A4498149E4AC800B05B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20A449A149E4AC800B05B8C /* TrackMyTripTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackMyTripTests.h; sourceTree = "<group>"; };
+		B20A449B149E4AC800B05B8C /* TrackMyTripTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackMyTripTests.m; sourceTree = "<group>"; };
+		B20A44AB149E53E600B05B8C /* LocHistoryDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocHistoryDB.h; sourceTree = "<group>"; };
+		B20A44AC149E53E600B05B8C /* LocHistoryDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocHistoryDB.m; sourceTree = "<group>"; };
+		B20A44AE149E54A200B05B8C /* trackmytrip.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = trackmytrip.db; path = db/trackmytrip.db; sourceTree = SOURCE_ROOT; };
+		B20A44AF149E54A200B05B8C /* trackmytrip.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = trackmytrip.sql; path = db/trackmytrip.sql; sourceTree = SOURCE_ROOT; };
+		B20A44B2149E553D00B05B8C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B20A44B4149E67EF00B05B8C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B20A44BE149E81EC00B05B8C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B20A44BF149E81EC00B05B8C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B20A44C1149E867700B05B8C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B2486D0815E7E883007F64D2 /* empty.story */ = {isa = PBXFileReference; lastKnownFileType = file; path = empty.story; sourceTree = "<group>"; };
+		B25B856C14A66768008AFB17 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = images/circle.png; sourceTree = SOURCE_ROOT; };
+		B25B856D14A66768008AFB17 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle@2x.png"; path = "images/circle@2x.png"; sourceTree = SOURCE_ROOT; };
+		B25B856E14A66768008AFB17 /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = images/square.png; sourceTree = SOURCE_ROOT; };
+		B25B856F14A66768008AFB17 /* square@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "square@2x.png"; path = "images/square@2x.png"; sourceTree = SOURCE_ROOT; };
+		B25B857814A66A58008AFB17 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B25B857914A66A58008AFB17 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		B25B857E14A682C6008AFB17 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B25B857F14A682C6008AFB17 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B25B858B14A6AA5C008AFB17 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		B25B858C14A6AA5C008AFB17 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		B25B85A314A77AB3008AFB17 /* LocManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocManager.h; sourceTree = "<group>"; };
+		B25B85A414A77AB3008AFB17 /* LocManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocManager.m; sourceTree = "<group>"; };
+		B25B85A614A7A86F008AFB17 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		B25B85A714A7A870008AFB17 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		B26F6FCB14A8E23C0050D278 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B28C38B414B26A2200B529CC /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		B28C38B514B26A2200B529CC /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		B2C4F89F14A938B100764C31 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Particle.png; path = images/Particle.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8A014A938B100764C31 /* Solid_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Solid_24.png; path = images/Solid_24.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8A114A938B100764C31 /* Solid_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Solid_30.png; path = images/Solid_30.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8A214A938B100764C31 /* Solid_37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Solid_37.png; path = images/Solid_37.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8A314A938B100764C31 /* Solid_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Solid_256.png; path = images/Solid_256.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8A414A938B100764C31 /* tmtm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tmtm.png; path = images/tmtm.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8B514A93E8F00764C31 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = images/button.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8E914A9430D00764C31 /* blue]button-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "blue]button-highlight.png"; path = "images/blue]button-highlight.png"; sourceTree = SOURCE_ROOT; };
+		B2C4F8EA14A9430D00764C31 /* bluebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluebutton.png; path = images/bluebutton.png; sourceTree = SOURCE_ROOT; };
+		B2C4F8EB14A9430D00764C31 /* button-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-highlight.png"; path = "images/button-highlight.png"; sourceTree = SOURCE_ROOT; };
+		B2C4F8EC14A9430D00764C31 /* redbutton-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "redbutton-highlight.png"; path = "images/redbutton-highlight.png"; sourceTree = SOURCE_ROOT; };
+		B2C4F8ED14A9430D00764C31 /* redbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redbutton.png; path = images/redbutton.png; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20A4463149E4AC700B05B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26F6FCC14A8E23C0050D278 /* MessageUI.framework in Frameworks */,
+				B20A44C2149E867700B05B8C /* MapKit.framework in Frameworks */,
+				B20A44B5149E67EF00B05B8C /* CoreLocation.framework in Frameworks */,
+				B20A44B3149E553D00B05B8C /* libsqlite3.dylib in Frameworks */,
+				B20A446B149E4AC700B05B8C /* UIKit.framework in Frameworks */,
+				B20A446D149E4AC700B05B8C /* Foundation.framework in Frameworks */,
+				B20A446F149E4AC700B05B8C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4489149E4AC800B05B8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A448F149E4AC800B05B8C /* SenTestingKit.framework in Frameworks */,
+				B20A4490149E4AC800B05B8C /* UIKit.framework in Frameworks */,
+				B20A4491149E4AC800B05B8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20A445B149E4AC400B05B8C = {
+			isa = PBXGroup;
+			children = (
+				B20A4470149E4AC700B05B8C /* TrackMyTrip */,
+				B20A44B2149E553D00B05B8C /* libsqlite3.dylib */,
+				B20A4471149E4AC700B05B8C /* Supporting Files */,
+				B20A44A9149E4F8C00B05B8C /* Resources */,
+				B20A4494149E4AC800B05B8C /* TrackMyTripTests */,
+				B20A4469149E4AC700B05B8C /* Frameworks */,
+				B20A4467149E4AC700B05B8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20A4467149E4AC700B05B8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4466149E4AC700B05B8C /* TrackMyTrip.app */,
+				B20A448D149E4AC800B05B8C /* TrackMyTripTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20A4469149E4AC700B05B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B26F6FCB14A8E23C0050D278 /* MessageUI.framework */,
+				B20A44B4149E67EF00B05B8C /* CoreLocation.framework */,
+				B20A44C1149E867700B05B8C /* MapKit.framework */,
+				B20A446A149E4AC700B05B8C /* UIKit.framework */,
+				B20A446C149E4AC700B05B8C /* Foundation.framework */,
+				B20A446E149E4AC700B05B8C /* CoreGraphics.framework */,
+				B20A448E149E4AC800B05B8C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20A4470149E4AC700B05B8C /* TrackMyTrip */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4479149E4AC700B05B8C /* AppDelegate.h */,
+				B20A447A149E4AC700B05B8C /* AppDelegate.m */,
+				B25B857E14A682C6008AFB17 /* DetailViewController.h */,
+				B25B857F14A682C6008AFB17 /* DetailViewController.m */,
+				B25B858B14A6AA5C008AFB17 /* EditViewController.h */,
+				B25B858C14A6AA5C008AFB17 /* EditViewController.m */,
+				B20A4485149E4AC800B05B8C /* FlipsideViewController.h */,
+				B20A4486149E4AC800B05B8C /* FlipsideViewController.m */,
+				B20A44AB149E53E600B05B8C /* LocHistoryDB.h */,
+				B20A44AC149E53E600B05B8C /* LocHistoryDB.m */,
+				B25B85A314A77AB3008AFB17 /* LocManager.h */,
+				B25B85A414A77AB3008AFB17 /* LocManager.m */,
+				B20A447F149E4AC800B05B8C /* MainStoryboard_iPad.storyboard */,
+				B20A447C149E4AC800B05B8C /* MainStoryboard_iPhone.storyboard */,
+				B20A4482149E4AC800B05B8C /* MainViewController.h */,
+				B20A4483149E4AC800B05B8C /* MainViewController.m */,
+				B20A44BE149E81EC00B05B8C /* MapViewController.h */,
+				B20A44BF149E81EC00B05B8C /* MapViewController.m */,
+				B25B857814A66A58008AFB17 /* TableViewController.h */,
+				B25B857914A66A58008AFB17 /* TableViewController.m */,
+				B25B85A614A7A86F008AFB17 /* MoreViewController.h */,
+				B25B85A714A7A870008AFB17 /* MoreViewController.m */,
+				B202339214AFB5C300BC1B58 /* Annotation.h */,
+				B202339314AFB5C300BC1B58 /* Annotation.m */,
+				B28C38B414B26A2200B529CC /* Trip.h */,
+				B28C38B514B26A2200B529CC /* Trip.m */,
+			);
+			path = TrackMyTrip;
+			sourceTree = "<group>";
+		};
+		B20A4471149E4AC700B05B8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4472149E4AC700B05B8C /* TrackMyTrip-Info.plist */,
+				B20A4473149E4AC700B05B8C /* InfoPlist.strings */,
+				B20A4476149E4AC700B05B8C /* main.m */,
+				B20A4478149E4AC700B05B8C /* TrackMyTrip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = TrackMyTrip;
+			sourceTree = "<group>";
+		};
+		B20A4494149E4AC800B05B8C /* TrackMyTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20A449A149E4AC800B05B8C /* TrackMyTripTests.h */,
+				B20A449B149E4AC800B05B8C /* TrackMyTripTests.m */,
+				B20A4495149E4AC800B05B8C /* Supporting Files */,
+			);
+			path = TrackMyTripTests;
+			sourceTree = "<group>";
+		};
+		B20A4495149E4AC800B05B8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20A4496149E4AC800B05B8C /* TrackMyTripTests-Info.plist */,
+				B20A4497149E4AC800B05B8C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B20A44A9149E4F8C00B05B8C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2486D0815E7E883007F64D2 /* empty.story */,
+				B25B856A14A66748008AFB17 /* images */,
+				B20A44AE149E54A200B05B8C /* trackmytrip.db */,
+				B20A44AF149E54A200B05B8C /* trackmytrip.sql */,
+			);
+			name = Resources;
+			path = TrackMyTrip;
+			sourceTree = "<group>";
+		};
+		B25B856A14A66748008AFB17 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B2C4F8E914A9430D00764C31 /* blue]button-highlight.png */,
+				B2C4F8EA14A9430D00764C31 /* bluebutton.png */,
+				B2C4F8EB14A9430D00764C31 /* button-highlight.png */,
+				B2C4F8EC14A9430D00764C31 /* redbutton-highlight.png */,
+				B2C4F8ED14A9430D00764C31 /* redbutton.png */,
+				B2C4F8B514A93E8F00764C31 /* button.png */,
+				B2C4F89F14A938B100764C31 /* Particle.png */,
+				B2C4F8A014A938B100764C31 /* Solid_24.png */,
+				B2C4F8A114A938B100764C31 /* Solid_30.png */,
+				B2C4F8A214A938B100764C31 /* Solid_37.png */,
+				B2C4F8A314A938B100764C31 /* Solid_256.png */,
+				B2C4F8A414A938B100764C31 /* tmtm.png */,
+				B25B856C14A66768008AFB17 /* circle.png */,
+				B25B856D14A66768008AFB17 /* circle@2x.png */,
+				B25B856E14A66768008AFB17 /* square.png */,
+				B25B856F14A66768008AFB17 /* square@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20A4465149E4AC700B05B8C /* TrackMyTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A449F149E4AC800B05B8C /* Build configuration list for PBXNativeTarget "TrackMyTrip" */;
+			buildPhases = (
+				B20A4462149E4AC700B05B8C /* Sources */,
+				B20A4463149E4AC700B05B8C /* Frameworks */,
+				B20A4464149E4AC700B05B8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrackMyTrip;
+			productName = TrackMyTrip;
+			productReference = B20A4466149E4AC700B05B8C /* TrackMyTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20A448C149E4AC800B05B8C /* TrackMyTripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A44A2149E4AC800B05B8C /* Build configuration list for PBXNativeTarget "TrackMyTripTests" */;
+			buildPhases = (
+				B20A4488149E4AC800B05B8C /* Sources */,
+				B20A4489149E4AC800B05B8C /* Frameworks */,
+				B20A448A149E4AC800B05B8C /* Resources */,
+				B20A448B149E4AC800B05B8C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20A4493149E4AC800B05B8C /* PBXTargetDependency */,
+			);
+			name = TrackMyTripTests;
+			productName = TrackMyTripTests;
+			productReference = B20A448D149E4AC800B05B8C /* TrackMyTripTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20A445D149E4AC400B05B8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B20A4460149E4AC400B05B8C /* Build configuration list for PBXProject "TrackMyTrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B20A445B149E4AC400B05B8C;
+			productRefGroup = B20A4467149E4AC700B05B8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20A4465149E4AC700B05B8C /* TrackMyTrip */,
+				B20A448C149E4AC800B05B8C /* TrackMyTripTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20A4464149E4AC700B05B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4475149E4AC700B05B8C /* InfoPlist.strings in Resources */,
+				B20A447E149E4AC800B05B8C /* MainStoryboard_iPhone.storyboard in Resources */,
+				B20A4481149E4AC800B05B8C /* MainStoryboard_iPad.storyboard in Resources */,
+				B20A44B0149E54A200B05B8C /* trackmytrip.db in Resources */,
+				B20A44B1149E54A200B05B8C /* trackmytrip.sql in Resources */,
+				B25B857014A66768008AFB17 /* circle.png in Resources */,
+				B25B857114A66768008AFB17 /* circle@2x.png in Resources */,
+				B25B857214A66768008AFB17 /* square.png in Resources */,
+				B25B857314A66768008AFB17 /* square@2x.png in Resources */,
+				B2C4F8A514A938B100764C31 /* Particle.png in Resources */,
+				B2C4F8A614A938B100764C31 /* Solid_24.png in Resources */,
+				B2C4F8A714A938B100764C31 /* Solid_30.png in Resources */,
+				B2C4F8A814A938B100764C31 /* Solid_37.png in Resources */,
+				B2C4F8A914A938B100764C31 /* Solid_256.png in Resources */,
+				B2C4F8AA14A938B100764C31 /* tmtm.png in Resources */,
+				B2C4F8B614A93E8F00764C31 /* button.png in Resources */,
+				B2C4F8EE14A9430D00764C31 /* blue]button-highlight.png in Resources */,
+				B2C4F8EF14A9430D00764C31 /* bluebutton.png in Resources */,
+				B2C4F8F014A9430D00764C31 /* button-highlight.png in Resources */,
+				B2C4F8F114A9430D00764C31 /* redbutton-highlight.png in Resources */,
+				B2C4F8F214A9430D00764C31 /* redbutton.png in Resources */,
+				B2486D0915E7E883007F64D2 /* empty.story in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A448A149E4AC800B05B8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4499149E4AC800B05B8C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B20A448B149E4AC800B05B8C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20A4462149E4AC700B05B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A4477149E4AC700B05B8C /* main.m in Sources */,
+				B20A447B149E4AC700B05B8C /* AppDelegate.m in Sources */,
+				B20A4484149E4AC800B05B8C /* MainViewController.m in Sources */,
+				B20A4487149E4AC800B05B8C /* FlipsideViewController.m in Sources */,
+				B20A44AD149E53E600B05B8C /* LocHistoryDB.m in Sources */,
+				B20A44C0149E81EC00B05B8C /* MapViewController.m in Sources */,
+				B25B857A14A66A58008AFB17 /* TableViewController.m in Sources */,
+				B25B858014A682C6008AFB17 /* DetailViewController.m in Sources */,
+				B25B858D14A6AA5C008AFB17 /* EditViewController.m in Sources */,
+				B25B85A514A77AB3008AFB17 /* LocManager.m in Sources */,
+				B25B85A814A7A870008AFB17 /* MoreViewController.m in Sources */,
+				B202339414AFB5C300BC1B58 /* Annotation.m in Sources */,
+				B28C38B614B26A2200B529CC /* Trip.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A4488149E4AC800B05B8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A449C149E4AC800B05B8C /* TrackMyTripTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20A4493149E4AC800B05B8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20A4465149E4AC700B05B8C /* TrackMyTrip */;
+			targetProxy = B20A4492149E4AC800B05B8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20A4473149E4AC700B05B8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20A4474149E4AC700B05B8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B20A447C149E4AC800B05B8C /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20A447D149E4AC800B05B8C /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B20A447F149E4AC800B05B8C /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20A4480149E4AC800B05B8C /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		B20A4497149E4AC800B05B8C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20A4498149E4AC800B05B8C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20A449D149E4AC800B05B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20A449E149E4AC800B05B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20A44A0149E4AC800B05B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTrip/TrackMyTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B20A44A1149E4AC800B05B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTrip/TrackMyTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B20A44A3149E4AC800B05B8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrackMyTrip.app/TrackMyTrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTripTests/TrackMyTripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B20A44A4149E4AC800B05B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrackMyTrip.app/TrackMyTrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTripTests/TrackMyTripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		B2D02C7E14CB1B8A00F513A5 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Benny Pollak";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Benny Pollak";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "7A1D5532-4F75-4A8F-8295-A0EBFE8D7A97";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "7A1D5532-4F75-4A8F-8295-A0EBFE8D7A97";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		B2D02C7F14CB1B8A00F513A5 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTrip/TrackMyTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		B2D02C8014CB1B8A00F513A5 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TrackMyTrip.app/TrackMyTrip";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TrackMyTrip/TrackMyTrip-Prefix.pch";
+				INFOPLIST_FILE = "TrackMyTripTests/TrackMyTripTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20A4460149E4AC400B05B8C /* Build configuration list for PBXProject "TrackMyTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A449D149E4AC800B05B8C /* Debug */,
+				B20A449E149E4AC800B05B8C /* Release */,
+				B2D02C7E14CB1B8A00F513A5 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A449F149E4AC800B05B8C /* Build configuration list for PBXNativeTarget "TrackMyTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A44A0149E4AC800B05B8C /* Debug */,
+				B20A44A1149E4AC800B05B8C /* Release */,
+				B2D02C7F14CB1B8A00F513A5 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A44A2149E4AC800B05B8C /* Build configuration list for PBXNativeTarget "TrackMyTripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A44A3149E4AC800B05B8C /* Debug */,
+				B20A44A4149E4AC800B05B8C /* Release */,
+				B2D02C8014CB1B8A00F513A5 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20A445D149E4AC400B05B8C /* Project object */;
+}
